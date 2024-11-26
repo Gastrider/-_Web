@@ -1,0 +1,335 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+    color: #201b2d;
+    font-size: 15px;
+    padding: 0;
+    margin: 0;
+}
+
+/* Заголовки */
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 900;
+}
+
+p {
+    line-height: 1.65em;
+}
+
+/* Шапка сайта */
+.header {
+    background: linear-gradient(180deg, rgba(110,182,249,1) 23%, rgba(83,164,235,1) 50%, rgba(86,154,233,1) 75%, rgba(79,144,219,1) 96%);
+    padding: 50px 0;
+}
+
+.container {
+    width: 90%;
+    max-width: 1024px;
+    margin: 0 auto;
+}
+
+.wrapper-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+}
+
+.offer__title {
+    font-size: 32px;
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+
+.offer__span {
+    text-transform: uppercase;
+    font-size: 48px;
+    font-weight: 600;
+    font-family: 'Ubuntu', sans-serif;
+    display: block;
+    margin-bottom: 20px;
+    animation: pulse 3s infinite;
+    cursor: pointer;
+}
+
+.offer__text {
+    font-size: 18px;
+    line-height: 1.5;
+    margin-bottom: 25px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: #f3bc25;
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.img-phone {
+    width: 350px;
+    transition: transform 0.3s ease;
+}
+
+.img-phone:hover {
+    transform: scale(1.1);
+}
+
+.main {
+    padding: 60px 0;
+}
+
+.second-wrapper-inner {
+    text-align: center;
+}
+
+.big-block {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.mini-block {
+    flex-basis: 30%;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.8);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.mini-block:hover {
+    background-color: rgba(255, 255, 255, 1);
+    transform: scale(1.05);
+}
+
+/* Анимации */
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes rotateLogo {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+}
+
+.logo:hover {
+    animation: rotateLogo 2s ease-in-out;
+}
+
+/* Формы */
+.product-form-block, .form-block {
+    background-color: rgba(240, 248, 255, 0.8);
+    padding: 50px 0;
+    text-align: center;
+}
+
+.product-form, .call {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 30px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+.product-form h2, .call h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Заголовки формы */
+.product-form label,
+.call label {
+    font-size: 18px; /* Увеличенный шрифт */
+    font-weight: bold; /* Выделение заголовков */
+    color: #333; /* Темный текст */
+    display: block; /* Отдельная строка для заголовка */
+    margin-bottom: 8px; /* Расстояние от заголовка до поля */
+}
+
+/* Поля формы и расстояния */
+.product-form .form-row,
+.call .form-row {
+    margin-bottom: 20px; /* Увеличенное расстояние между строками формы */
+}
+
+/* Поля ввода */
+.product-form input,
+.product-form textarea,
+.call input,
+.call textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px; /* Унифицированный размер текста */
+    font-family: 'Open Sans', sans-serif;
+    color: #333; /* Цвет текста внутри полей */
+    box-sizing: border-box;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-form input::placeholder,
+.call input::placeholder {
+    color: #999; /* Унифицированный цвет текста placeholder */
+    font-size: 16px; /* Размер совпадает с текстом */
+    font-style: italic; /* Лёгкий стиль для подсказки */
+}
+
+.product-form input:focus,
+.product-form textarea:focus,
+.call input:focus,
+.call textarea:focus {
+    border-color: #f3bc25;
+    outline: none;
+    box-shadow: 0 0 5px rgba(243, 188, 37, 0.5);
+}
+
+.product-form textarea, .call textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+/* Кнопки */
+.product-form button, .call button {
+    width: 100%;
+    padding: 12px;
+    background-color: #f3bc25;
+    border: none;
+    color: black;
+    font-weight: bold;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.product-form button:hover, .call button:hover {
+    background-color: #e3ac15;
+}
+
+/* Выпадающий список (Способ оплаты) */
+.product-form select#payment-method {
+    width: 100%; /* Растягивается на всю ширину блока */
+    padding: 12px; /* Увеличенное поле для удобства клика */
+    font-size: 16px; /* Увеличенный текст */
+    border: 1px solid #ccc; /* Рамка как у остальных полей */
+    border-radius: 5px; /* Скругление углов */
+    cursor: pointer; /* Указывает, что элемент кликабелен */
+    background-color: #fff; /* Белый фон */
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-form select#payment-method:focus {
+    border-color: #f3bc25; /* Акцент при фокусе */
+    outline: none;
+    box-shadow: 0 0 5px rgba(243, 188, 37, 0.5); /* Эффект свечения */
+}
+
+/* Стрелки в числовых полях */
+.product-form input[type="number"]::-webkit-inner-spin-button,
+.product-form input[type="number"]::-webkit-outer-spin-button {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+
+.product-form input[type="number"] {
+    -moz-appearance: textfield;
+}
+
+
+/* Футер */
+footer {
+    background: linear-gradient(0deg, rgba(77,140,224,1) 13%, rgba(77,140,224,1) 23%, rgba(66,133,213,1) 35%, rgba(60,128,212,1) 42%, rgba(48,119,201,1) 50%, rgba(77,140,224,1) 54%, rgba(66,131,214,1) 71%, rgba(52,114,189,1) 85%, rgba(38,96,163,1) 100%);
+    text-align: center;
+    padding: 20px 0;
+    color: white;
+}
+
+.form-output {
+    background-color: #f9f9f9;
+    padding: 20px;
+    margin-top: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+}
+.form-output h3 {
+    color: #4caf50;
+}
+
+/* Адаптивность */
+@media (max-width: 991px) {
+    .big-block {
+        flex-direction: column;
+    }
+
+    .mini-block {
+        flex-basis: 100%;
+        margin-bottom: 20px;
+    }
+
+    .product-form, .call {
+        padding: 20px;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    .big-block {
+        flex-wrap: wrap;
+    }
+
+    .mini-block {
+        flex-basis: 48%;
+    }
+}
+
+/* Стили для сообщений об ошибках */
+.error-message {
+    color: #e74c3c;
+    font-size: 14px;
+    margin-top: 5px;
+    display: none; /* По умолчанию скрыто */
+}
+
+/* Стили для корректно введенных данных */
+input.valid, textarea.valid, select.valid {
+    border-color: #27ae60;
+}
+
+/* Стили для некорректно введенных данных */
+input.invalid, textarea.invalid, select.invalid {
+    border-color: #e74c3c;
+}
+
+/* Для сообщений об ошибках при фокусе на поле */
+input:focus.invalid, textarea:focus.invalid, select:focus.invalid {
+    box-shadow: 0 0 5px rgba(231, 76, 60, 0.5);
+}

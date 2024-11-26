@@ -1,0 +1,126 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cool Company</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+</head>
+
+<body>
+    <!-- Шапка -->
+    <header class="header">
+        <div class="container">
+            <img class="logo" src="img/logo.png" alt="logo">
+            <div class="wrapper-inner">
+                <div class="offer">
+                    <h1 class="offer__title animate__animated animate__fadeInDown">
+                        С помощью нас<br> вы сможете создать то, о чем
+                    </h1>
+                    <span class="offer__span">желаете!</span>
+                    <p class="offer__text">
+                        Наши возможности и опыт позволят Вам достичь<br> огромного успеха. Мы верим в Вас! И знаем это на<br> все 100%. Вас не остановить!
+                    </p>
+                    <a href="#" class="btn animate__animated animate__bounce">Узнать больше...</a>
+                </div>
+                <img class="img-phone" src="img/header-img.png" alt="phone">
+            </div>
+        </div>
+    </header>
+    
+    <!-- Основной контент -->
+    <main class="main">
+        <div class="container">
+            <div class="second-wrapper-inner">
+                <h2>Что Вам необходимо?</h2>
+                <div class="big-block">
+                    <div class="mini-block">
+                        <img class="img-second-block" src="img/f3.png" alt="pencil">
+                        <h3>Первый блок</h3>
+                        <p>Спасибо вам за вашу постоянную поддержку.</p>
+                    </div>
+                    <div class="mini-block">
+                        <img class="img-second-block" src="img/f4.png" alt="balloon">
+                        <h3>Второй блок</h3>
+                        <p>Спасибо вам за вашу постоянную поддержку.</p>
+                    </div>
+                    <div class="mini-block">
+                        <img class="img-second-block" src="img/f5.png" alt="flag">
+                        <h3>Третий блок</h3>
+                        <p>Спасибо вам за вашу постоянную поддержку.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+<!-- Форма заказа продукта с таблицей для ввода данных -->
+<div class="product-form-block">
+    <div class="product-form">
+        <h2>Форма заказа продукта или услуги</h2>
+        <form>
+            <div class="form-row">
+                <label for="product-name">Название продукта:</label>
+                <input type="text" id="product-name" placeholder="Введите название продукта" required>
+                <span class="error-message">Название продукта не может быть пустым</span>
+            </div>
+            <div class="form-row">
+                <label for="quantity">Количество:</label>
+                <input type="number" id="quantity" placeholder="Введите количество" min="1" required>
+                <span class="error-message">Количество должно быть числом больше 0</span>
+            </div>
+            <div class="form-row">
+                <label for="email">Ваш E-mail:</label>
+                <input type="email" id="email" placeholder="example@domain.com" required>
+                <span class="error-message">Введите корректный email</span>
+            </div>
+            <div class="form-row">
+                <label for="comments">Комментарии:</label>
+                <textarea id="comments" placeholder="Введите комментарии"></textarea>
+                <span class="error-message"></span>
+            </div>
+            <div class="form-row">
+                <label for="payment-method">Способ оплаты:</label>
+                <select id="payment-method" required>
+                    <option value="">Выберите способ оплаты</option>
+                    <option value="Наличные">Наличные</option>
+                    <option value="Карта">Карта</option>
+                    <option value="CБП">CБП</option>
+                </select>
+                <span class="error-message">Выберите способ оплаты</span>
+            </div>
+            <button type="submit" class="form-submit-btn">Отправить заявку!</button>
+        </form>        
+    </div>
+</div>
+
+
+    <!-- Форма обратного звонка -->
+    <div class="form-block">
+        <div class="call">
+            <h2>Форма обратного звонка</h2>
+            <form>
+                <input type="text" placeholder="Имя" required>
+                <input type="email" placeholder="Введите свой E-mail" required>
+                <input type="tel" placeholder="Телефон" required>
+                <textarea placeholder="Какие темы вас интересуют?"></textarea>
+                <button type="submit">Отправить вопрос!</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Футер -->
+    <footer>
+        <div class="container">
+            <p>© Все на этом сайте защищено</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
